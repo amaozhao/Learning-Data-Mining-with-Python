@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
 
 
-data_filename = 'leagues_NBA_2015_games_games.csv'
+data_filename = 'leagues_NBA_2016_games.csv'
 results = pd.read_csv(data_filename)
 results["HomeWin"] = results["PTS"] < results["PTS.1"]
 results["HomeLastWin"] = False
